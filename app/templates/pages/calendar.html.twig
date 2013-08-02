@@ -4,6 +4,15 @@
 <h1>Course Calendar</h1>
 
 <table class='table'>
+    <thead>
+        <tr>
+            <th>Week</th>
+            <th>Module</th>
+            <th>Assignments Due</th>
+            <th>Project Activity</th>
+        </tr>
+    </thead>
+    <tbody>
 
     {% for module in modules %}
 
@@ -22,15 +31,19 @@
 
                 {% if n == 0 %}
                 <td rowspan='{{ module.wknums | length }}'>{{ module.name }}</td>
+                <td rowspan='{{ module.wknums | length }}'>Get Assignments related to module</td>
+                <td rowspan='{{ module.wknums | length }}'>Get project stuff related to this</td>
                 {% endif %}
 
-                <td>Thing</td>
+                
+                
 
             </tr>
         {% endfor %}
 
     {% endfor %}
 
+    </tbody>
 </table>
 
 {% endblock %}

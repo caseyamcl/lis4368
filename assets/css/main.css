@@ -39,3 +39,28 @@ body > footer .media.instructor-info img {
 .page-content {
     padding: 20px 0;
 }
+
+.bigger {
+    font-size: 1.2em;
+}
+
+.syllabus div[class^="col-lg-"], 
+.syllabus div[class*=" col-lg-"] {
+    margin-bottom: 40px;
+}
+
+.syllabus .syllabus-img img {
+    max-width: 80%;
+    margin: auto 0;
+}
+
+@media print {
+    .syllabus .syllabus-img {
+        display: none;
+    }
+}
+
+.grading-table {
+    margin: 25px auto;
+    width: 80%;
+}
