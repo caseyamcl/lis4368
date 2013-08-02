@@ -10,7 +10,7 @@ use Silex\Provider\TwigServiceProvider;
 use Whoops\Provider\Silex\WhoopsServiceProvider;
 use Symfony\Component\Yaml\Yaml;
 use RuntimeException, Exception;
-
+use Twig_SimpleFunction, Kint;
 
 /**
  * Main DL2SL Application Library
@@ -89,6 +89,9 @@ class App extends SilexApplication
             $this->doMaintenance();
         }
         else {
+
+            //Mount special controllers
+            $this->mount('', new Controller\Calendar());
 
             //Mount controllers
             $this->mount('', new Controller\Redirects());
@@ -180,6 +183,12 @@ class App extends SilexApplication
             //debug method
             if ($app['debug'] == true) {
                 $twig->addExtension(new \Twig_Extension_Debug());
+
+                if (class_exists('Kint')) {
+                    $twig->addFunction(new Twig_SimpleFunction('kint', function($data) {
+                        return Kint::dump($data);
+                    }));
+                }
             }
 
             //Site is public?

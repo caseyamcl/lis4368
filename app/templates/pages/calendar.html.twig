@@ -1,0 +1,36 @@
+{% extends 'page.html.twig' %}
+{% block content %}
+
+<h1>Course Calendar</h1>
+
+<table class='table'>
+
+    {% for module in modules %}
+
+        {% for n, wk in module.wknums %}
+
+            {% set beginDate = module.begin + (604800 * n) %}
+            {% set endDate   = beginDate    + 345600       %}
+
+            <tr {{ ("now" >= beginDate and "now" <= endDate) ? "class='warning'" : '' }}>
+                <td>
+                    <span class='wknum'>Week {{ wk }}</span>
+                    <span class='wkdates'>
+                        {{ beginDate | date('D, M j') }} &mdash; {{ endDate | date('D, M j') }}
+                    </span>
+                </td>
+
+                {% if n == 0 %}
+                <td rowspan='{{ module.wknums | length }}'>{{ module.name }}</td>
+                {% endif %}
+
+                <td>Thing</td>
+
+            </tr>
+        {% endfor %}
+
+    {% endfor %}
+
+</table>
+
+{% endblock %}

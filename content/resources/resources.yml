@@ -1,0 +1,10 @@
+# ===============================
+- name: 'Some Online Reading'
+  desc: 'This is a resource that will get you up-to-snuff with stuff'
+  url:  http://www.google.com
+  tags: ['HTTP', 'Foundations']
+# ===============================
+- name: A NetTuts Article
+  desc: 'This is a great resource'
+  url:  http://www.google.com
+  tags: ['HTTP', 'Stuff']

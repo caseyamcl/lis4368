@@ -1,5 +1,7 @@
 <?php
 
+use LIS4368\App;
+
 /**
  * @file index.php
  * LIS4368.CCI.FSU.EDU Index File
@@ -18,8 +20,7 @@ if ( ! is_readable(__DIR__ . '/app/vendor/autoload.php')) {
 //Autoloader
 require(__DIR__ . '/app/vendor/autoload.php');
 
-
 //Away we go
-\LIS4368\App::main();
+App::main(isset($dev) ? App::DEVELOPMENT : App::PRODUCTION);
 
 /* EOF: index.php */
