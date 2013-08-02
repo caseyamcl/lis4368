@@ -1,0 +1,10 @@
+/* TEAM */
+Your title: Casey McLaughlin
+Site: http://caseymclaughlin.com
+Twitter: @caseyamcl
+Location: Tallahassee, Florida
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: PHP, Bootstrap CSS Framework, Symfony
+Software: Sublime Text, Firebug, Firefox, PHPUnit, Composer

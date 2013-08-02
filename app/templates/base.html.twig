@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>FSU LIS4368 | {% block pagetitle %}Course Website{% endblock %}</title>
+
+        {% block page_maincss %}
+
+        {# CDN CSS #}
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css" rel="stylesheet">
+
+        {# Local CSS #}
+        <link href="{{ base_url }}/assets/css/main.css" rel="stylesheet">
+        {% endblock %}
+
+        {% block page_resources %}
+        {% endblock %}
+
+        {% block page_headers %}
+        {% endblock %}
+    </head>
+    <body>
+        
+        <header>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-lg-12'>
+                        &lt;html&gt;&lt;head&gt;&lt;meta charset='utf-8'&gt;&lt;title&gt;Load Site&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;h1&gt;Welcome&lt;/h1&gt;&lt;?php $x = 552.2 / 23.321; ?&gt;
+                        &lt;?php echo <a href='{{ site_url }}' title='Homepage'>"LIS4368 Web Development with PHP"</a>; ?&gt;&lt;?php echo <span>"Let's Get Excited and Make Things"</span>; ?&gt;&lt;?php $cls = new DbObj(); ?&gt;
+                        &lt;?php $cls = loadDb(); $cls->runQuery(sprintf("SELECT * FROM users WHERE `user` = '%s' AND `pass = '%s'", $uName, $uPass); ?&gt;
+                        &lt;/body&gt;&lt;/html&gt;
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        {% block page_content %}{% endblock %}
+
+        <footer>
+            <div class='container'>
+                <div class='col-lg-6'>
+
+                    <div class='media fsu-affiliation'>
+                        <a href='http://fsu.edu' class='pull-left'>
+                            <img src='{{ base_url }}/assets/img/fsu_seal.png' style='width: 60px' />
+                        </a>
+                        <div class='media-body'>
+                            <h3>Florida State University</h3>
+                            <p>Copyright &copy; {{ date() | date('Y') }} - All Rights Reserved</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class='col-lg-6'>
+                    <div class='media instructor-info'>
+                        <a href='http://caseymclaughlin.com' class='pull-left'>
+                            <img src='{{ base_url }}/assets/img/headshot.jpg' alt='Casey McL Headshot' />
+                        </a>
+                        <div class='media-body'>
+                            <h3>Casey McLaughlin <a href='mailto:casey.mclaughlin@cci.fsu.edu' title='Mail'><i class='icon-envelope'></i></a></h3>
+                            <p>Office Hours: <strong>Mondays 3pm - 5pm</strong> - <strong><abbr title='Louis Shores Building'>LSB</abbr> Rm 216A</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        {% block page_mainjs %}
+
+            {# CDN Resources #}
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+            <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+            <script src='//code.jquery.com/ui/1.10.3/jquery-ui.min.js'></script>
+
+            {# Local Resources #}
+            <script src='{{ base_url }}//assets/js/main.js' rel='stylesheet'></script>
+        {% endblock %}
+    </body>
+</html>

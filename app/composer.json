@@ -1,0 +1,24 @@
+{
+    "name": "lis4368.cci.fsu.edu",
+    "type": "website",
+    "description": "FSU LIS4368 Course Website",
+    "homepage": "http://lis4368.cci.fsu.edu",
+    "authors": [
+        {
+            "name":     "Casey McLaughlin",
+            "email":    "caseyamcl@gmail.com",
+            "homepage": "http://caseymclaughlin.com",
+            "role":     "Lead Instructor and Developer"
+        }
+    ],
+    "require": {
+        "silex/silex":            ">=1.1.0",
+        "twig/twig":              ">=1.12",
+        "symfony/twig-bridge":    ">=2.1",
+        "filp/whoops":            ">=1.0.1",
+        "symfony/yaml":           ">=2.1.0"
+    },
+    "autoload": {
+        "psr-0": { "LIS4368": "src/" }
+    }
+}

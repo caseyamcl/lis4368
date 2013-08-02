@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block page_content %}
+<div class='container'>
+    <div class='span11 offset1'>
+        <h1>404 - Not Found</h1>
+        <p>Whoops, looks like that page does not exist.</p>
+        <p>
+            Would you like to <a href='{{ site_url }}' title='Homepage'>
+            head back to the homepage</a>?
+        </p>
+    </div>
+</div>
+{% endblock %}

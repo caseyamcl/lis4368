@@ -1,0 +1,41 @@
+/* Main CSS for LIS4368.cci.fsu.edu */
+
+body > header {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    font-family: monospace;
+    color: #999;
+    font-size: 1.2em;
+}
+
+body > header a,
+body > header span {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+body > footer .container {
+    margin-top: 70px;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+}
+
+body > footer .media h3 {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+body > footer .media p {
+    margin-bottom: 0;
+}
+
+body > footer .media.instructor-info img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.page-content {
+    padding: 20px 0;
+}
