@@ -1,17 +1,30 @@
 /* Main CSS for LIS4368.cci.fsu.edu */
 
 body > header {
-    background-color: #f9f9f9;
+    background-color: #222;
     border-bottom: 1px solid #eee;
     padding: 10px 0;
     font-family: monospace;
-    color: #999;
+    color: #ccc;
     font-size: 1.2em;
+    position: relative;
+}
+
+body > header #header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/code.png');
+    background-position: top left;
+    background-size: cover;
+    opacity: 0.25;
 }
 
 body > header a,
 body > header span {
-    color: #000;
+    color: #fff;
     font-size: 1.2em;
     font-weight: bold;
 }
