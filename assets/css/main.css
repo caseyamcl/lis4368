@@ -1,69 +1,94 @@
 /* Main CSS for LIS4368.cci.fsu.edu */
 
-body > header {
-    background-color: #222;
-    border-bottom: 1px solid #eee;
-    padding: 10px 0;
-    font-family: monospace;
-    color: #ccc;
-    font-size: 1.2em;
-    position: relative;
-}
-
-body > header #header-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../img/code.png');
-    background-position: top left;
-    background-size: cover;
-    opacity: 0.25;
-}
-
-body > header a,
-body > header span {
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-body > footer .container {
-    margin-top: 70px;
-    padding: 15px 0;
-    border-top: 1px solid #eee;
-}
-
-body > footer .media h3 {
-    margin-top: 0;
-    margin-bottom: 4px;
-}
-
-body > footer .media p {
-    margin-bottom: 0;
-}
-
-body > footer .media.instructor-info img {
-    border: 1px solid #fff;
-    border-radius: 50%;
-}
-
-.page-content {
-    padding: 20px 0;
+.underlined {
+    border-bottom: 1px solid #ddd;
 }
 
 .bigger {
     font-size: 1.2em;
 }
 
+/* ------ */
+
+.navbar-fixed-top .title-actual {
+    color: #eee;
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .navbar-fixed-top .title-php,
+    .navbar-fixed-top .title-name {
+        display: none;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .navbar-fixed-top #main-navigation {
+        float: right;
+    }
+}
+
+@media (max-width: 437px) {
+    .navbar-fixed-top .title-php,
+    .navbar-fixed-top .title-name {
+        display: none;
+    }
+}
+/* ------ */
+
+#main-content {
+    position: relative;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+@media print {
+    #main-content {
+        margin-top: 0;
+        padding: 0;
+    }
+}
+
+/* ------ */
+
+#main-footer .container {
+    margin-top: 70px;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+}
+
+#main-footer .media {
+    margin-bottom: 20px;
+}
+
+#main-footer .media h3 {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+#main-footer .media p {
+    margin-bottom: 0;
+}
+
+#main-footer .media.instructor-info img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+/* ------ */
+
 .syllabus div[class^="col-lg-"], 
 .syllabus div[class*=" col-lg-"] {
     margin-bottom: 40px;
 }
 
+.syllabus .syllabus-img {
+    text-align: center;
+}
+
 .syllabus .syllabus-img img {
     max-width: 80%;
+    max-height: 80%;
     margin: auto 0;
 }
 

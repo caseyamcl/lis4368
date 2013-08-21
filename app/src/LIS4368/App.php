@@ -93,13 +93,13 @@ class App extends SilexApplication
             //Mount special controllers
             $this->mount('', new Controller\Calendar());
             $this->mount('', new Controller\Syllabus());
-
-            //Mount controllers
-            $this->mount('', new Controller\Redirects());
             $this->mount('', new Controller\Front());
 
+            //Mount controllers
+            $this->mount('', new CoreController\Redirects());
+
             //Mount general 'pages and assets' controller LAST!
-            $this->mount('', new Controller\PagesAndAssets());
+            $this->mount('', new CoreController\PagesAndAssets());
         }
 
         //Go

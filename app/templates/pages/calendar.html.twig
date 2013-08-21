@@ -8,6 +8,7 @@
         <tr>
             <th>Week</th>
             <th>Module</th>
+            <th>Lectures</th>
             <th>Assignments Due</th>
             <th>Project Activity</th>
         </tr>
@@ -16,31 +17,54 @@
 
     {% for module in modules %}
 
-        {% for n, wk in module.wknums %}
+        <tr {{ ("now" >= module.begin and "now" <= module.end) ? "class='warning'" : '' }}>
+            <td>
+                <span class='wknum'>Week {{ module.wknum }}</span>
+                <span class='module-begin'>{{ module.begin | date('D, M j') }}</span>
+                <span class='module-thru'>thru</span>
+                <span class='module-end'>{{ module.end | date('D, M j') }}</span>
+            </td>
 
-            {% set beginDate = module.begin + (604800 * n) %}
-            {% set endDate   = beginDate    + 345600       %}
+            <td>{{ module.name }}</td>
 
-            <tr {{ ("now" >= beginDate and "now" <= endDate) ? "class='warning'" : '' }}>
-                <td>
-                    <span class='wknum'>Week {{ wk }}</span>
-                    <span class='wkdates'>
-                        {{ beginDate | date('D, M j') }} &mdash; {{ endDate | date('D, M j') }}
-                    </span>
-                </td>
-
-                {% if n == 0 %}
-                <td rowspan='{{ module.wknums | length }}'>{{ module.name }}</td>
-                <td rowspan='{{ module.wknums | length }}'>Get Assignments related to module</td>
-                <td rowspan='{{ module.wknums | length }}'>Get project stuff related to this</td>
+            <td>
+                {% if module.lectures is defined and module.lectures | length > 0 %}
+                    {% for lect in module.lectures %}
+                    <p class='lecture-{{ lect.meet ? 'meet' : 'nomeet' }}'>
+                        <span class='lecture-date'>{{ lect.date | date('D, M j') }}</span>
+                        <span class='lecture-title'>{{ lect.title }}</span>
+                    </p>
+                    {% endfor %}
+                {% else %}
+                <em>No Lectures</em>
                 {% endif %}
+            </td>
 
-                
-                
+            <td>
+                {% if module.assignments is defined and module.assignments | length > 0 %}
+                    {% for assign in module.assignments %}
+                        <p class='assignment'>
+                            <a href='#'>
+                                <span class='assign-due'>Due: <span class='assign-due-date'>{{ assign.due | date('D, M j') }}</span></span>
+                                <span class='assign-title'>{{ assign.name }}</span>
+                            </a>
+                        </p>
+                    {% endfor %}
+                {% else %}
+                <em>No Assignments</em>
+                {% endif %}
+            </td>
 
-            </tr>
-        {% endfor %}
-
+            <td>
+                {% if module.project is defined and module.project | length > 0 %}
+                    {% for projActivity in module.project %}
+                        <p class='project-activity'>{{ projActivity }}</p>
+                    {% endfor %}
+                {% else %}
+                <em>No Assignments</em>
+                {% endif %}                
+            </td>
+        </tr>
     {% endfor %}
 
     </tbody>

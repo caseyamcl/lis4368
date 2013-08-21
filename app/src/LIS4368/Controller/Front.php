@@ -2,6 +2,8 @@
 
 namespace LIS4368\Controller;
 
+use LIS4368\CoreController\ControllerAbstract;
+
 /**
  * Calendar Controller
  */
