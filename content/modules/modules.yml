@@ -1,7 +1,7 @@
 # ===================================================================
 - name:   'Introduction'
   begin:  2013-08-26
-  end:    2013-09-30
+  end:    2013-08-30
   wknum:  1
   lectures:
       - date:  2013-08-26
@@ -9,25 +9,25 @@
         title: Introduction to the Course
       - date:  2013-08-28
         meet:  true
-        title: xxx
-  assignments:
-      - name:   'Project Plan'
-        start:  2013-08-26
-        due:    2013-09-04
-        points: 5
-        desc:   >
-                "Submit a project proposal for a simple 
-                 application that you would like to develop"
-        instructions:
-            - "Brainstorm a project that you would like to to develop.  The project should contain the following attributes..."
-            - "Create a project propopsal.  The proposal should be a one or two-page description that includes the following..."
+        title: Project Plan and Assignments
+  # assignments:
+  #     - name:   'Project Plan'
+  #       start:  2013-08-26
+  #       due:    2013-09-04
+  #       points: 5
+  #       desc:   >
+  #               "Submit a project proposal for a simple 
+  #                application that you would like to develop"
+  #       instructions:
+  #           - "Brainstorm a project that you would like to to develop.  The project should contain the following attributes..."
+  #           - "Create a project propopsal.  The proposal should be a one or two-page description that includes the following..."
   resources:
       - name: 'Some Online Reading'
         desc: 'This is a resource that will get you up-to-snuff with stuff'
         url:  http://www.google.com
         tags: ['HTTP', 'Foundations']
   project:
-      - "Brainstorm what you would like to do for your project"
+      - "Brainstorm what you would like to do for your project."
 
 # ===================================================================
 - name:   'Development Environment'
@@ -40,7 +40,9 @@
         title: Labor Day - FSU is Closed
       - date:  2013-09-04
         meet:  true
-        title: xxx
+        title: "Dev Environment and Basic Code"
+  project:
+      - "Submit project description."
 # ===================================================================
 - name:   'PHP Variables thru Functions'
   begin:  2013-09-09
@@ -49,10 +51,12 @@
   lectures:
       - date:  2013-09-09
         meet:  true
-        title: xxx
+        title: Basic Code thru Arrays
       - date:  2013-09-11
         meet:  true
-        title: xxx
+        title: Basic Code thru Functions
+  project:
+      - "Submit revised project description."
 # ===================================================================
 - name:   'Version Control with GIT'
   begin:  2013-09-16
@@ -61,11 +65,12 @@
   lectures:
       - date:  2013-09-16
         meet:  true
-        title: xxx
+        title: Introduction to GIT
       - date:  2013-09-18
         meet:  true
-        title: xxx
-
+        title: GIT Lab
+  project:
+      - "Submit initial draft to Bitbucket"
 # ===================================================================
 - name:   'Object Oriented Programming I'
   begin:  2013-09-23
@@ -74,10 +79,10 @@
   lectures:
       - date:  2013-09-23
         meet:  true
-        title: xxx
+        title: OOP Primer
       - date:  2013-09-25
         meet:  true
-        title: xxx
+        title: Property Access and Inheretence
 # ===================================================================
 - name:   'Object Oriented Programming II'
   begin:  2013-09-30
@@ -86,10 +91,10 @@
   lectures:
       - date:  2013-09-30
         meet:  true
-        title: xxx
+        title: OOP Patterns - Object Types
       - date:  2013-10-02
         meet:  true
-        title: xxx
+        title: OOP Patterns - Data Modeling
 # ===================================================================
 - name:   'HTTP'
   begin:  2013-10-07
@@ -98,10 +103,10 @@
   lectures:
       - date:  2013-10-07
         meet:  true
-        title: xxx
+        title: Introduction to HTTP
       - date:  2013-10-09
         meet:  true
-        title: xxx
+        title: Advanced HTTP and REST
 # ===================================================================
 - name:   'User Input'
   begin:  2013-10-14
@@ -110,10 +115,10 @@
   lectures:
       - date:  2013-10-14
         meet:  true
-        title: xxx
+        title: Introduction to Forms
       - date:  2013-10-16
         meet:  true
-        title: xxx
+        title: Forms Part II
 # ===================================================================
 - name:   'Persisting Data'
   begin:  2013-10-21
@@ -122,10 +127,10 @@
   lectures:
       - date:  2013-10-21
         meet:  true
-        title: xxx
+        title: MySQL Primer
       - date:  2013-10-23
         meet:  true
-        title: xxx
+        title: Mapping Objects to the DB
 # ===================================================================
 - name:   'Sessions and Auth'
   begin:  2013-10-28
@@ -134,24 +139,24 @@
   lectures:
       - date:  2013-10-28
         meet:  true
-        title: xxx
+        title: All About Sesssions
       - date:  2013-10-30
         meet:  true
-        title: xxx
+        title: Building a Login Form
 # ===================================================================
-- name:   'MVC and Frameworks'
+- name:   'Design Patterns and MVC'
   begin:  2013-11-04
   end:    2013-11-08
   wknum:  11
   lectures:
       - date:  2013-11-04
         meet:  true
-        title: xxx
+        title: Design Patterns - Front Controller
       - date:  2013-11-06
         meet:  true
-        title: xxx
+        title: Model-View-Controller
 # ===================================================================
-- name:   'Practical Laravel'
+- name:   Composer
   begin:  2013-11-11
   end:    2013-11-15
   wknum:  12
@@ -161,40 +166,40 @@
         title: "Veteran's Day - FSU is Closed"
       - date:  2013-11-13
         meet:  true
-        title: xxx
+        title: Intro to Composer
 # ===================================================================
-- name:   'Extra Topics One'
+- name:   'Laravel Framework'
   begin:  2013-11-18
   end:    2013-11-22
   wknum:  13
   lectures:
       - date:  2013-11-18
         meet:  true
-        title: xxx
+        title: Intro to Laravel
       - date:  2013-11-20
         meet:  true
-        title: xxx
+        title: Laravel Concepts
 # ===================================================================
-- name:   'Help Sessions'
+- name:   'Extra Topics'
   begin:  2013-11-25
   end:    2013-11-29
   wknum:  14
   lectures:
       - date:  2013-11-25
         meet:  true
-        title: xxx
+        title: 'Web Services, JSON, and XML'
       - date:  2013-11-27
         meet:  true
-        title: xxx
+        title: 'Unit Testing'
 # ===================================================================
-- name:   'Wrap-Up and Review'
+- name:   'Extra Topics / Wrap Up'
   begin:  2013-12-02
   end:    2013-12-06
   wknum:  15
   lectures:
       - date:  2013-12-02
         meet:  true
-        title: xxx
+        title: Web Application Security 
       - date:  2013-12-04
         meet:  true
-        title: xxx
+        title: Review and Where to Go Next

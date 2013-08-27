@@ -1,19 +1,52 @@
 {% extends 'page.html.twig' %}
-
 {% block content %}
 
-        <div class='col-lg-6'>
+{#
+    <div class='col-lg-6'>
+        <h3>What's New</h3>
+        <p>Navigation Here</p>
+    </div>
+    <div class='col-lg-6'>
+        <h3>Current Module</h3>
+        <p>Module Information Here</p>
+    </div>
+#}
 
-            <h3>What's New</h3>
+<div class='col-lg-8'>
+    <h2>Welcome</h2>
+    <p class='lead'>
+        <strong><em>Hello</em></strong>, and welcome to LIS4368, <em> Advanced Web
+        Development with PHP</em> for the Fall, 2013 Semester.
+    </p>
 
-            <p>Navigation Here</p>
+    <p class='lead'>
+        My name is Casey McLaughlin, and I'll be your instructor for this course.  I am
+        still putting the finishing touches on this website; adding assignments and resources, and
+        finishing the assignment due dates.  
+    </p>
 
-        </div>
-        <div class='col-lg-6'>
-            <h3>Current Module</h3>
+    <p class='lead'>
+        In the meantime, please review the course syllabus and calendar, and be sure to attend
+        on the first day of class.
+    </p>
+</div>
+<div class='col-lg-4'>
+    <h2>First Steps:</h2>
+    <p>
+        <a style='font-size: 1.3em;' href='{{ site_url }}/syllabus' title='Go to syllabus' class='btn btn-primary btn-block'>
+            <i class='icon-edit'></i> 
+            Read the Syllabus
+            <i class='icon-arrow-right'></i>
+        </a>
+    </p>
 
-            <p>Module Information Here</p>
-
-        </div>
+    <p>
+        <a style='font-size: 1.3em;' href='{{ site_url }}/calendar' title='Go to syllabus' class='btn btn-primary btn-block'>
+            <i class='icon-calendar'></i> 
+            Review the Course Calendar
+            <i class='icon-arrow-right'></i>
+        </a>
+    </p>    
+</div>
 
 {% endblock %}

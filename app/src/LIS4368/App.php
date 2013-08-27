@@ -93,6 +93,8 @@ class App extends SilexApplication
             //Mount special controllers
             $this->mount('', new Controller\Calendar());
             $this->mount('', new Controller\Syllabus());
+            $this->mount('', new Controller\Assignments());
+            $this->mount('', new Controller\Resources());
             $this->mount('', new Controller\Front());
 
             //Mount controllers
