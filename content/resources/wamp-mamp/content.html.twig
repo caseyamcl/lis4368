@@ -1,3 +1,47 @@
 <h2>Setting up WAMP or MAMP</h2>
 
-<p>Content to be posted by Aug 29, 2013</p>
+<p>
+    In order to run PHP web apps on your laptop or desktop computer, you will
+    need to have a fully functional test web server environment setup.  WAMP
+    and MAMP make this easy.
+</p>
+
+<h3>WAMP Server</h3>
+
+<ol>
+    <li>
+        Download and install WAMP from <a href='http://www.wampserver.com/en/' title='WAMP Homepage'>http://www.wampserver.com/en/</a>
+        <ul><li><em>Select the default options during install.  This includes the dialog boxes about email servers at the end of the install process</em></li></ul>
+    </li>
+    <li>Start WAMP by finding the purple <em>Start WAMPServer</em> icon in your Start Menu.  Click "OK" to the security dialog.</li>
+    <li>
+        A <em>'w'</em> icon will appear in your task tray in the lower right-hand corner of the screen.  The icon will turn green when the server is ready.
+        <ul><li><em>If the icon does not turn green, please refer to the troubleshooting guide below</em></li></ul>
+    </li>
+    <li>Left-click the icon in the task tray, and select "<em>Put Servers Online</em>".  You only need to do this once.</li>
+    <li>Left-click the icon in the task tray again, and select "Localhost" from the menu.</li>
+</ol>
+
+<hr />
+
+<h3>MAMP Server</h3>
+
+<ol>
+    <li>
+        Download and install MAMP from <a href='http://www.mamp.info/en/index.html' title='MAMP Homepage'>http://www.mamp.info/en/index.html</a>
+        <ul><li><em>Select the default options during install</em></li></ul>
+    </li>
+
+    <li>Start MAMP control panel by finding the MAMP icon in <em>Applications</em> from the Finder</li>
+    <li>Click <em>Start Servers</em> and ensure that the status indicator for both Apache and MySQL server turn green</li>
+    <li>Click <em>Open Start Page</em> to open the start page in your web browser</li>
+    <li>
+        The <abbr title='aka document root'>web folder</a> on your hard disk is <var>/Applications/MAMP/htdocs</var>. 
+        Refer to the <a href='{{ site_url }}/resources/netbeans-projects'>Netbeans Project Setup Info</a> for more information.
+    </li>
+</ol>
+
+<p>
+    For more information, refer to the 
+    <a href='http://documentation.mamp.info/en/mamp/first-steps'>official documentation</a>
+</p>
