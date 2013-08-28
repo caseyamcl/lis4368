@@ -9,8 +9,8 @@
             <th>Week</th>
             <th>Module</th>
             <th>Lectures</th>
-            <th>Assignments Due</th>
-            <th>Project Activity</th>
+            <th>Resources</th>
+            <th>Assignments</th>
         </tr>
     </thead>
     <tbody>
@@ -41,6 +41,18 @@
             </td>
 
             <td>
+                {% if module.resources is defined and module.resources | length > 0 %}
+                    <ul class='list-unstyled'>
+                    {% for resource in module.resources %}
+                        <li><a href='{{ resource.url }}' title='{{ resource.desc }}'>{{ resource.name }}</a></li>
+                    {% endfor %}
+                    </ul>
+                {% else %}
+                    <em>No Resources Yet</em>
+                {% endif %}
+            </td>
+
+            <td>
                 {% if module.assignments is defined and module.assignments | length > 0 %}
                     {% for assign in module.assignments %}
                         <p class='assignment'>
@@ -53,16 +65,6 @@
                 {% else %}
                 <em>No Assignments Yet</em>
                 {% endif %}
-            </td>
-
-            <td>
-                {% if module.project is defined and module.project | length > 0 %}
-                    {% for projActivity in module.project %}
-                        <p class='project-activity'>{{ projActivity }}</p>
-                    {% endfor %}
-                {% else %}
-                <em>No Activity Yet</em>
-                {% endif %}                
             </td>
         </tr>
     {% endfor %}

@@ -1,7 +1,16 @@
 {% extends 'page.html.twig' %}
 {% block content %}
     <div class='col-lg-12'>
-        <h2>No Resources Yet :)</h2>
-        <p class='lead'>Resources will be posted by Aug 28, 2013</p>
+        <h2>Resources</h2>
+        <p class='lead'>Additional Resources will be posted by Sept 4, 2013</p>
+
+        <hr />
+
+        <ul class='nav nav-list'>
+            <li><a href='{{ site_url }}/resources/required-software' title='Required Software'>Software We Use in this Course</a></li>
+            <li><a href='{{ site_url }}/resources/wamp-mamp' title='Setting up WAMP or MAMP'>Setting up WAMP or MAMP</a></li>
+            <li><a href='{{ site_url }}/resources/netbeans-projects' title='Netbeans Projects'>Netbeans Projects Step-By-Step</a></li>
+        </ul>
+
     </div>
 {% endblock %}

@@ -1,0 +1,68 @@
+<h2>Managing a Project in Netbeans</h2>
+
+<hr />
+
+<h3>Setting up a new Project in Netbeans</h3>
+
+<p>This describes how to setup a new project in Netbeans from scratch.</p>
+
+<ol>
+    <li>
+        Ensure you have downloaded and installed <strong>Netbeans 7.3 for PHP</strong> or newer from
+        <a href='https://netbeans.org/downloads/' target='_new' title='Download Netbeans'>https://netbeans.org/downloads/</a>.
+    </li>
+
+    <li>Open Netbeans</li>
+    <li>Select dropdown menu: <em>File &rarr; New Project&hellip;</em></li>
+    <li>In the New Project Window, select <em>PHP &rarr; PHP Application</em> and click <em>Next</em></li>
+    <li>Give your project a Name</li>
+    <li>
+        <strong class='text-danger'>IMPORTANT:</strong> Be sure to fill out the <em>Sources Folder</em> field correctly:
+        <ul>
+            <li>For MAMP (Apple computers), the folder should inside of your <strong>/Application/MAMP/htdocs</strong> folder. (e.g. <em>/Application/MAMP/htdocs/MyProj</em>)</li>
+            <li>If WAMP (Windows computers), the folder should be inside of your <strong>C:\wamp\www</strong> folder. (e.g. <em>C:\wamp\www\MyProj</em>)
+        </ul>
+        <ul>
+            <li>
+                You should not set the project folder equal to <em>htdocs</em> (Mac) or <em>www</em> (Windows).  Instead, be sure to put the new folder
+                underneath htdocs or www folder as a new folder.
+            </li>
+        </ul>
+    </li>
+    <li>Select <strong>PHP 5.4</strong> for the PHP version and <strong>UTF-8</strong> for the text encoding.</li>
+    <li>Click <em>Finish</em>, because you are now done.</li>
+    <li>
+        Once the project is created, add some dummy content to the <var>index.php</var> file,
+        and then click the green Play button (<i class='icon-play text-success'></i>).  If MAMP or WAMP
+        is running, you should see your content in a web browser.
+    </li>
+</ol>
+
+<h3>Enabling GIT for a Netbeans Project</h3>
+
+<p>Once you have created a project in Netbeans and started to add code, you should enable GIT for that project.</p>
+
+<ol>
+    <li>Ensure you have a working project in Netbeans already setup (see instructions above).</li>
+    <li>
+        Ensure you have downloaded and installed <strong>GIT</strong> from 
+        <a href='http://git-scm.com/' title='Git Homepage' target='_blank'>http://git-scm.com/</a>.
+    </li>
+    <li>Open your project in Netbeans.</li>
+    <li>In the left sidebar, select the <em>Project</em> tab to view your Project files.</li>
+    <li>Highlight the name of your project by clicking on it in the left sidebar.</li>
+    <li>Select dropdown menu: <em>Team &rarr; Git &rarr; Initalize</em>.</li>
+    <li>Click <em>OK</em> to the confirmation box that appears.</li>
+    <li>After a moment, the file names in the left sidebar will appear green to indicate they have not been committed to the GIT repository</li>
+    <li>Select <em>Team &rarr; Commit</li> to make your first commit</li>
+    <li>Type a commit mesage and click the <em>Commit</em> button</li>
+    <li>Your repository is setup!  From now on, you can periodically commit your code to create stable snapshots of it</li>
+</ol>
+
+{#<h3>Pushing Your Netbeans Project to Bitbucket for the First Time</h3>#}
+{#<h3>Cloning an existing Bitbucket Project into Netbeans</h3>#}
+{#<p>
+    This describes how to clone an existing Bitbucket project into your Netbeans environment.  It is 
+    useful if you lose your code and need to restore it from Bitbucket, or if you get a new computer, and
+    need to clone your repository and code onto it.
+</p>#}

@@ -11,7 +11,8 @@ class Resources extends PagesAndAssets
 {
     protected function loadRoutes()
     {
-        $this->addRoute('/resources', 'index');
+        $this->addRoute('/resources',        'index');
+        $this->addRoute('/resources/{name}', 'getContent');
     }
 
     // --------------------------------------------------------------
@@ -23,6 +24,9 @@ class Resources extends PagesAndAssets
         
         return $this->render('pages/resources', $data);
     }
+
+    // --------------------------------------------------------------
+
 }
 
 /* EOF: Resources.php */

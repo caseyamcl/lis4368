@@ -9,7 +9,7 @@
         title: Introduction to the Course
       - date:  2013-08-28
         meet:  true
-        title: Project Plan and Assignments
+        title: Dev Environment and Basic Code
   # assignments:
   #     - name:   'Project Plan'
   #       start:  2013-08-26
@@ -22,15 +22,23 @@
   #           - "Brainstorm a project that you would like to to develop.  The project should contain the following attributes..."
   #           - "Create a project propopsal.  The proposal should be a one or two-page description that includes the following..."
   resources:
-      - name: 'Some Online Reading'
-        desc: 'This is a resource that will get you up-to-snuff with stuff'
-        url:  http://www.google.com
-        tags: ['HTTP', 'Foundations']
+      - name: 'Netbeans Projects Step-By-Step'
+        desc: 'Guide to configuing Netbeans Projects'
+        url:  http://lis4368.cci.fsu.edu/resources/netbeans-projects
+        tags: ['Development Environment', 'Foundations', 'Course Content']
+      - name: 'How to Configure WAMP or MAMP'
+        desc: 'Step-by-step guide to installing WAMP or MAMP Server'
+        url:  http://lis4368.cci.fsu.edu/resources/wamp-mamp
+        tags: ['Development Environment', 'Foundations', 'Course Content']
+      - name: 'Software we Use'
+        desc: 'Explanation of software packages used in this course'
+        url:  http://lis4368.cci.fsu.edu/resources/netbeans-projects
+        tags: ['Development Environment', 'Foundations', 'Course Content']
   project:
       - "Brainstorm what you would like to do for your project."
 
 # ===================================================================
-- name:   'Development Environment'
+- name:   'Getting Started'
   begin:  2013-09-02
   end:    2013-09-06
   wknum:  2
@@ -40,7 +48,7 @@
         title: Labor Day - FSU is Closed
       - date:  2013-09-04
         meet:  true
-        title: "Dev Environment and Basic Code"
+        title: "Project Plan, Assignments, and More Code"
   project:
       - "Submit project description."
 # ===================================================================
