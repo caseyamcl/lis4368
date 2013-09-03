@@ -26,7 +26,6 @@ class Assignments extends PagesAndAssets
     {
         parent::init();
 
-        $this->pageLoader->setPageFileName('overview.html.twig');
         $this->assignList = $this->getLibrary('assignments')->getAssignmentList();
     }
 
@@ -48,6 +47,20 @@ class Assignments extends PagesAndAssets
     protected function getTemplateName()
     {
         return 'pages/assignment';
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Render the page using TWIG
+     *
+     * @param  string $path
+     * @return string
+     */
+    protected function getPageContent($path)
+    {
+        $this->pageLoader->setPageFileName('overview.html.twig');
+        return parent::getPageContent($path);
     }
 
     // --------------------------------------------------------------
