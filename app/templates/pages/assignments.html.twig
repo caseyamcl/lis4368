@@ -1,7 +1,36 @@
 {% extends 'page.html.twig' %}
 {% block content %}
     <div class='col-lg-12'>
-        <h2>No Assignments Yet :)</h2>
-        <p class='lead'>Assignments will be posted by Sept 4, 2013</p>
+        <h2>Assignments</h2>
+
+        <p class='lead'>
+            Your assignments will consist of iterative improvements to your <a href='#'>final project</a>.
+            You may also wish to review the <a href='#'>assignment submission instructions</a>.
+        </p>
     </div>
+
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Due Date</th>
+                <th>Name</th>
+                <th>Summary</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for assign in assignments %}
+                <tr>
+                    <td>{{ assign.due | date('l, M d')}}</td>
+                    <td>{{ assign.name }}</td>
+                    <td>{{ assign.summary }}</td>
+                    <td>
+                        <a class='btn btn-primary' href='{{ site_url }}/assignments/{{ assign.slug }}' title='View Assignment Overview'>
+                            <i class='icon-long-arrow-right'></i>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}

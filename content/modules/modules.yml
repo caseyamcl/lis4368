@@ -10,17 +10,6 @@
       - date:  2013-08-28
         meet:  true
         title: Dev Environment and Basic Code
-  # assignments:
-  #     - name:   'Project Plan'
-  #       start:  2013-08-26
-  #       due:    2013-09-04
-  #       points: 5
-  #       desc:   >
-  #               "Submit a project proposal for a simple 
-  #                application that you would like to develop"
-  #       instructions:
-  #           - "Brainstorm a project that you would like to to develop.  The project should contain the following attributes..."
-  #           - "Create a project propopsal.  The proposal should be a one or two-page description that includes the following..."
   resources:
       - name: 'Netbeans Projects Step-By-Step'
         desc: 'Guide to configuing Netbeans Projects'
@@ -63,6 +52,9 @@
       - date:  2013-09-11
         meet:  true
         title: Basic Code thru Functions
+  assignments:
+    - slug: 1-project-plan
+      due:  2013-09-11
   project:
       - "Submit revised project description."
 # ===================================================================

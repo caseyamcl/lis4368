@@ -141,6 +141,11 @@ class App extends SilexApplication
             return new ContentRetriever\Asset($app['content']);
         });
 
+        //Assignment list getter
+        $this['assignments'] = $this->share(function() use ($app) {
+            return new Helper\AssignmentGetter($app['content'], $app['crawler'], $app['pages']);
+        });
+
         //Twig for Strings
         $this['twig.strings'] = $this->share(function() use ($app) {
             return new \Twig_Environment(new \Twig_Loader_String());

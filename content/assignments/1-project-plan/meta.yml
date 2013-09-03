@@ -1,0 +1,18 @@
+name:    Project Plan
+summary: >
+    Devise a web application project that you would like to work on 
+    during the course of the semester and present a written overview to the instructor.
+ruberick:
+    - "Is the project clearly and concisely defined?"
+    - "Is the motivation for the project included?"
+    - "Are there at minimum 10 user stories?"
+    - "Do the user stories adhere the correct syntax?"
+    - "Are the user stories comprehensive?"
+    - "Are the user stories specific?"
+    - "Is the ER diagram clearly defined?"
+    - "Are all major entities included in the ER diagram?"
+    - "Is the list of user interfaces comprehensive?"
+    - "Does each interface include a description of the page?"
+    - "Are the wireframes clear and informative?"
+    - "Are the wireframes comprehensive?"
+    - "Is the plan in PDF format?"

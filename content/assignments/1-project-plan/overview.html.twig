@@ -1,0 +1,158 @@
+{# Description #}
+<p>
+    You should have the opportunity to work on a project that is meaningful to you.
+    Thus, I am allowing (ie requiring) you to come up with your own idea to impelement.
+</p>
+
+<h4>Don't have an idea of what to do?</h4>
+
+<p>
+    Your idea should be interesting to you.  Choose a particular itch you wish to scratch,
+    something related to your hobbies, or think of a way you can make an existing app better.
+</p>
+
+<p>
+    For example, I would redesign the course registration system at FSU.  However, you can't choose
+    that idea for your project, because we will be using it for in-class demonstrations.
+</p>
+
+<p>
+    If you're truly stuck, try <a href='http://goo.gl/I4g1wP' title='Google Results'>Googling some ideas</a>,
+    or consult with me.
+</p>
+
+<h4>Technical Requirements (by the end of the term)</h4>
+
+<p>
+    I am very liberal with the leeway you have to define your idea.  However, you will use this project
+    to demonstrate to me some fundamental knowledge about PHP.  So, your project must be able to
+    implement certain functionality.  By the end of the term, the following conditions must be present
+    for an "A" grade:
+</p>
+
+<ul>
+    <li>It will use object-oriented coding standards</li>
+    <li>It will store and retrieve data in a database (MySQL, Riak, MongoDB, etc)</li>
+    <li>It will require a login and utilize Sesssions</li>
+    <li>It will implement the MVC design pattern</li>
+</ul>
+
+<p>
+    Most projects people tend to choose implement this functionality quite naturally, so if you're not sure,
+    don't worry too much.
+</p>
+
+<h4>Don't bite off too much</h4>
+
+<p>
+    Your final project shouldn't be too large.  Keep it to four or five core bits of functionality.  For
+    example, if your dream is to build a course management system to be better than Blackboard, you will
+    need to select a few bite-sized chunks from the system to work on for your project.
+</p>
+
+<p>
+    If your project has more than four or five screens, or if it contains a long list of things it must do, then
+    you may wish to focus only on a small subset.  The goal is to make a simple but solid project, not a large
+    and comprehensive one.
+</p>
+
+<h4>Deliverables</h4>
+
+<p>
+    You will submit to me, in <strong>PDF format</strong>, a document with the following information:
+</p>
+
+<ul>
+    <li>A brief paragraph describing your idea and why you chose it</li>
+    <li>
+        A list of user stories (at least 10) - Read <a href='http://codesqueeze.com/the-easy-way-to-writing-good-user-stories/'>this</a>
+        and <a href='http://techportal.inviqa.com/2011/07/19/how-to-create-user-stories/'>this</a>.
+    </li>    
+    <li>
+        An basic <a href='http://creately.com/blog/diagrams/er-diagrams-tutorial/'>Entity-Relation Diagram</a> that
+        describes the basic components of your system
+    </li>
+    <li>A list of user interfaces (ie. webpages) that you know will exist in your application</li>
+    <li>
+        Basic wireframes for each page in your application.  Use one of the following to help you:
+        <ul>
+            <li>Microsoft Visio (download from CCI Helpdesk for free)</li>
+            <li>Omnigraffle (costs money)</li>
+            <li>Google Drive Images (free)</li>
+            <li>Mockingbird (free online tool)</li>
+            <li>Any of <a href='http://www.sitepoint.com/5-free-wireframe-applications/' title='Free online wireframing tools'>these tools</a></li>
+        </ul>
+    </li>
+</ul>
+
+<h4>A Basic Example</h4>
+
+<div class='well'>
+    <h5>Course Registration System for Fictional University</h5>
+
+    <p>
+        My project is a course registration system for a university, similar to the one at FSU.
+        The app will allow students to view and register for available courses.  It will also allow 
+        administrators the ability to manage courses &amp; students and to generate reports.  The system
+        will be user-friendly, simple, and work on any device (smart phones, PC, Mac, etc).
+    </p>
+
+    <h5>User Stories</h5>
+
+    <ul>
+        <li>As a <strong>student</strong>, I can <strong>view all available courses</strong> so that I know what I can register for</li>
+        <li>As a <strong>student</strong>, I can <strong>login and logout with campus credentials</strong> so that my schedule is available only to me</li>
+        <li>As a <strong>manager</strong>, I can <strong>view a list of course rosters based on what deutnets have registered for</strong> so that I can generate enrollment reports to instructors</li>
+        <li><em>etc.</em></li>
+    </ul>
+
+    <h5>E-R Diagram</h5>
+
+    <p>[[diagram here]]</p>
+
+    <h5>User Interfaces (pages)</h5>
+
+    <ul>
+        <li><strong>/{front}</strong> -- Show login page and some information about registering</li>
+        <li><strong>/register</strong> -- Students see this screen when registering.  They can search, browse, and register for courses</li>
+        <li><strong>/schedule</strong> -- Students can see their registered courses in schedule form on this screen, and they can unregister</li>
+        <li><strong>/admin</strong> -- Managers can see this screen.  It is the main menu for administration</li>
+        <li><strong>/admin/rosters</strong> -- Managers can view and print rosters per course on this screen</li>
+        <li><em>etc. (don't go overboard)</em></li>
+    </ul>
+
+    <h5>Wireframes</h5>
+    
+    <p>Wireframes here</p>
+</div>
+
+<h4>Your Plan will Change</h4>
+
+<p>
+    As you work on your project throughout the semester, your application will evolve, and some assumptions you made
+    in your Project Plan will go away.  This is natural.  Don't expect your Project Plan to be perfect.
+</p>
+
+<h4>So Why Do we Make a Plan at All Then?</h4>
+
+<blockquote>
+    <p>In preparing for battle I have always found that plans are useless, but planning is indispensable.</p>
+    <small><cite title="Author">Dwight D. Eisenhower</cite></small>
+</blockquote>
+
+<p>
+    It is easy to change a plan once you have one.  It is very difficult, however, to accomplish a task without
+    having a plan, no matter how imperfect that plan is.
+</p>
+
+<p>
+    Furthermore, it is easy to get carried away with functionality, especially about a project you're excited to
+    work on.  Sometimes, <a href='http://en.wikipedia.org/wiki/Scope_creep' title='Wikipedia it'>scope creep</a>
+    can occur.  A plan helps you stay grounded by reminding you of the things you set out to do when you started.
+</p>
+
+<h4>Need Input and Further Help?</h4>
+
+<p>
+    Come see or email your humble instructor, but do it before the due date!
+</p>

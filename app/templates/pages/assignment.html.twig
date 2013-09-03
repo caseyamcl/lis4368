@@ -1,0 +1,17 @@
+{% extends 'page.html.twig' %}
+{% block content %}
+    <div class='col-lg-8 col-lg-offset-2'>
+        <h2><small>Assignment &raquo;</small> <strong>{{ name }}</strong></h2>
+        <p class='assignment-due'>Due: {{ due | date('l, M d') }}
+
+        <div class='well'>
+            <p>{{ summary }}</p>
+        </div>
+
+        <h3>Overview</h3>
+
+        <div class='assignment-overview'>
+            {{ content | raw }}
+        </div>
+    </div>
+{% endblock %}

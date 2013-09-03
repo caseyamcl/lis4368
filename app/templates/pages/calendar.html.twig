@@ -56,7 +56,7 @@
                 {% if module.assignments is defined and module.assignments | length > 0 %}
                     {% for assign in module.assignments %}
                         <p class='assignment'>
-                            <a href='#'>
+                            <a href='{{ site_url }}/assignments/{{ assign.slug }}'>
                                 <span class='assign-due'>Due: <span class='assign-due-date'>{{ assign.due | date('D, M j') }}</span></span>
                                 <span class='assign-title'>{{ assign.name }}</span>
                             </a>

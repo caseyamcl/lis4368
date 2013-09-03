@@ -37,21 +37,42 @@ class Page
     // --------------------------------------------------------------
 
     /**
+     * Change the default filename from content.html.twig to something else
+     *
+     * @param string $fileName
+     */
+    public function setPageFileName($fileName)
+    {
+        $this->pageFile = $fileName;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
      * Get the content
      *
+     * @param  string  $path      Path to content
+     * @param  string  $pageFile  The filename of the content page (or null for default)
      * @return string|null  Null if no content found
      */
-    public function getContent($path)
+    public function getContent($path, $pageFile = null)
     {
-        $fullpath = rtrim($path, '/') . '/'  . $this->pageFile;
+        $fullpath = rtrim($path, '/') . '/'  . ($pageFile ?: $this->pageFile);
         return $this->contentMap->getItem($fullpath) ?: null;
     }
     
     // -------------------------------------------------------------- 
 
-    public function pageExists($path)
+    /**
+     * Get if a page exists
+     *
+     * @param  string  $path      Path to content
+     * @param  string  $pageFile  The filename of the content page (or null for default)
+     * @return boolean
+     */
+    public function pageExists($path, $pageFile = null)
     {
-        $fullpath = rtrim($path, '/') . '/' . $this->pageFile;
+        $fullpath = rtrim($path, '/') . '/' . ($pageFile ?: $this->pageFile);
         return (boolean) $this->contentMap->checkItemExists($fullpath);
     }
 

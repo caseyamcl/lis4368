@@ -10,12 +10,12 @@ class PagesAndAssets extends ControllerAbstract
     /**
      * @var LIS4368\ContentRetriever\Page
      */
-    private $pageLoader;
+    protected $pageLoader;
 
     /**
      * @var LIS4368\ContentRetriever\Page
      */
-    private $assetLoader;
+    protected $assetLoader;
 
     // --------------------------------------------------------------
  
@@ -94,10 +94,10 @@ class PagesAndAssets extends ControllerAbstract
      */
     protected function renderPage($path, array $data = array())
     {
-        $data = array(
+        $data = array_merge(array(
             'content'  => $this->getPageContent($path),
             'page_url' => $this->getCurrentUrl()
-        );
+        ), $data);
 
         //Also get page data
         $data = array_merge($data, $this->getMeta($path));
