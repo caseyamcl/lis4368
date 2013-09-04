@@ -131,3 +131,18 @@
 .assignment-page h4 {
     margin-top: 40px;
 }
+
+.centered-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+.shadowed-img {
+    border: 1px solid #111;
+    box-shadow: 1px 1px 1px #111;
+}
+
+.padded-img {
+    padding: 4px;
+}
