@@ -51,20 +51,6 @@ class Assignments extends PagesAndAssets
 
     // --------------------------------------------------------------
 
-    /**
-     * Render the page using TWIG
-     *
-     * @param  string $path
-     * @return string
-     */
-    protected function getPageContent($path)
-    {
-        $this->pageLoader->setPageFileName('overview.html.twig');
-        return parent::getPageContent($path);
-    }
-
-    // --------------------------------------------------------------
-
     /** 
      * {@inheritdoc}
      */
