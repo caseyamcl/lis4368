@@ -127,3 +127,7 @@
 .lecture .lecture-title {
     font-weight: bold;
 }
+
+.assignment-page h4 {
+    margin-top: 40px;
+}
