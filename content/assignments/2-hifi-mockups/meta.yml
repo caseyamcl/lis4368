@@ -1,0 +1,15 @@
+name:    High Fidelity Mockups
+summary: >
+    Create a functional HTML/CSS mockup of your project's interface with
+    some basic PHP functionality thrown in
+ruberick:
+    - "Is the output valid HTML on all pages?"
+    - "Does the code execute error-free?"
+    - "Is the code free of all debugging statements?"    
+    - "Is there an index of pages in the mockup?"
+    - "Do all of the links in the index work?"
+    - "Has each interface been carefully thought out and implemented?"
+    - "Is the code well-organized and easy to read?"
+    - "Does the code include at least one multi-dimensional array?"
+    - "Does the code include at least one loop?"
+    - "Does the code include at least one function?"

@@ -14,6 +14,14 @@
         <div class='assignment-overview'>
             {{ content | raw }}
         </div>
+
+        <h4>How I will Grade This</h4>
+
+        <ol>
+        {% for item in ruberick %}
+            <li>{{ item}}</li>
+        {% endfor %}
+        </ol>
     </div>
 </div>
 {% endblock %}
