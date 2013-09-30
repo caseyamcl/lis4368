@@ -1,0 +1,13 @@
+name:    Data Models
+summary: >
+    Create object-oriented data models for all of the entities in your
+    application.
+ruberick:
+    - "Is the output valid HTML on all pages?"
+    - "Does the code execute error-free?"
+    - "Is the code free of all debugging statements?"
+    - "Does the code contain at least two classes / data-models?"
+    - "Does each model contain private or portected properties?"
+    - "Does each model contain interface methods?"
+    - "Does each model set the state appropriately upon object construction?"
+    - "Are the models included and used in at least one page of the mockups?"

@@ -1,0 +1,169 @@
+<p>
+    You will create object-oriented data models for all of the entities that you've identified
+    in your application.  The models should reflect the attributes and behaviors of your entities.
+</p>
+
+<p>
+    To begin, create a folder inside your application named "Models":
+</p>
+
+<pre><code>
+    /index.php
+    /assets
+    /Models &lt;== New Models folder
+</code></pre>
+
+<p>
+    For each entity in your application, create a corresponding class:
+</p>
+
+<pre><code>
+    class Person
+    {
+        //...
+    }
+</code></pre>
+
+<p>
+    Inside each model/entity class, add protected properties for each of the
+    attributes in your entity:
+</p>
+
+<pre><code>
+    class Person
+    {
+        protected $firstName;
+        protected $lastName;
+        protected $address;
+        protected $phone;
+    }
+</code></pre>
+
+<p>
+    Also add interface methods for each property where appropriate:
+</p>
+
+<pre><code>
+    class Person
+    {
+        // ...
+
+        public function setFirstName($firstName)
+        {
+             $this->firstName = $firstName;
+        }
+
+        public function getFirstName()
+        {
+            return $this->firstName;
+        }
+
+        // ...
+    }
+</code></pre>
+
+<p>
+    Model your entity relationships as well
+</p>
+
+<pre><code>
+    class Person
+    {
+        /**
+         * @var array
+         */
+        protected $courses;
+
+        public function getCourses()
+        {
+            return $this->courses;
+        }
+
+        public function setCourses(array $courses)
+        {
+            $this->courses = $courses;
+        }
+
+        public function addCourse(Course $course)
+        {
+            $this->courses[] = $course;
+        }
+    }
+
+    // =========================================
+
+    class Course
+    {
+        /**
+         * @var array
+         */
+        protected $roster;
+
+        public function getRoster()
+        {
+            return $this->roster;
+        }
+
+        public function setRoster(array $roster)
+        {
+            $this->roster = $roster;
+        }
+
+        public function addStudentToRoster(Person $person)
+        {
+            $this->roster[] = $person;
+        }
+    }
+
+    // =========================================
+
+    // etc...
+
+</code></pre>
+
+<p>
+    In at least one of your pages, populate your models with data,
+    and print that data in your mockups.
+</p>
+
+<p>
+    A good way to do this would be to substitute your models wherever
+    you used multidimensional arrays in assignment #2.
+</p>
+
+<code><pre>
+    
+    &lt;?php
+    //...
+        include('person.class.php');
+
+        $myPeople = array();
+        
+        $myPeople[] = new Person('Bob',   'Smith',  '24', 'Male');  
+        $myPeople[] = new Person('Joe',   'Burns',  '23', 'Male');  
+        $myPeople[] = new Person('Sally', 'Barnes', '26', 'Female');
+
+    //...
+    ?&gt;
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+
+    &lt;h1&gt;People&lt;/h1&gt;
+
+    &lt;?php
+
+        foreach ($myPeople as $person) {
+            echo "&lt;li&gt;";
+            echo $person->getFName();
+            echo $person->getLName();
+            echo $person->getAge();
+            echo $person->getGender();
+            echo "&lt;/li&gt;";
+        }
+
+    ?&gt;    
+
+    &lt;/body&gt;
+    &lt;/html&gt;
+</pre></code>
