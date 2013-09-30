@@ -1,0 +1,13 @@
+{% extends 'page.html.twig' %}
+{% block content %}
+<div class='resource-page'>
+    <div class='col-lg-8 col-lg-offset-2'>
+        <h2>{{ name }}</h2>
+
+        <div class='resource-content'>
+            {{ content | raw }}
+        </div>
+
+    </div>
+</div>
+{% endblock %}

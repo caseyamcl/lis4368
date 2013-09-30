@@ -27,6 +27,11 @@ class Resources extends PagesAndAssets
 
     // --------------------------------------------------------------
 
+    protected function getTemplateName()
+    {
+        return 'pages/resource';
+    }
+
 }
 
 /* EOF: Resources.php */
