@@ -1,0 +1,13 @@
+name:    Forms
+summary: >
+    Create at least one form to accept user data as part of your application.
+ruberick:
+    - "Is the output valid HTML on the form pages and its success message page?"
+    - "Does the code execute error-free?"
+    - "Is the code free of all debugging statements?"
+    - "Does the form submit button actually work?"
+    - "Is there at least one required field in the form?"
+    - "Does the form re-print upon erroneous submission with a message?"
+    - "Does the form print a success message with some form data in it upno successful submission?"
+    - "Does the form processing code contain at least one validation function?"
+    - "Does the form processing code convert the user's input into a model (entity) object?"

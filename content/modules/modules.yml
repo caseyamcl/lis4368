@@ -137,9 +137,9 @@
       - date:  2013-10-23
         meet:  true
         title: Mapping Objects to the DB
-  # assignments:
-  #   - slug: 4-forms
-  #     due:  2013-10-16        
+  assignments:
+    - slug: 4-forms
+      due:  2013-10-25        
 # ===================================================================
 - name:   'Sessions and Auth'
   begin:  2013-10-28
@@ -154,7 +154,7 @@
         title: Building a Login Form
   # assignments:
   #   - slug: 5-data-mappers
-  #     due:  2013-10-16            
+  #     due:  2013-11-01           
 # ===================================================================
 - name:   'Design Patterns and MVC'
   begin:  2013-11-04
@@ -169,7 +169,7 @@
         title: Model-View-Controller
   # assignments:
   #   - slug: 6-authentication
-  #     due:  2013-10-16          
+  #     due:  2013-11-15
 # ===================================================================
 - name:   Composer
   begin:  2013-11-11
@@ -206,9 +206,9 @@
       - date:  2013-11-27
         meet:  true
         title: 'Unit Testing'
-  # assignments:
-  #   - slug: 7-framework-version
-  #     due:  2013-10-16         
+  #assignments:
+    # - slug: 7-framework-version
+    #   due:  2013-11-22      
 # ===================================================================
 - name:   'Extra Topics / Wrap Up'
   begin:  2013-12-02
