@@ -148,13 +148,10 @@
   lectures:
       - date:  2013-10-28
         meet:  true
-        title: All About Sesssions
+        title: Object Mapper DB Pattern
       - date:  2013-10-30
         meet:  true
-        title: Building a Login Form
-  # assignments:
-  #   - slug: 5-data-mappers
-  #     due:  2013-11-01           
+        title: All About Sesssions       
 # ===================================================================
 - name:   'Design Patterns and MVC'
   begin:  2013-11-04
@@ -163,13 +160,13 @@
   lectures:
       - date:  2013-11-04
         meet:  true
-        title: Design Patterns - Front Controller
+        title: Building a Login Form
       - date:  2013-11-06
         meet:  true
-        title: Model-View-Controller
-  # assignments:
-  #   - slug: 6-authentication
-  #     due:  2013-11-15
+        title: Design Patterns - Front Controller
+  assignments:
+    - slug: 5-data-mappers
+      due:  2013-11-08
 # ===================================================================
 - name:   Composer
   begin:  2013-11-11
@@ -181,7 +178,7 @@
         title: "Veteran's Day - FSU is Closed"
       - date:  2013-11-13
         meet:  true
-        title: Intro to Composer
+        title: Model-View-Controller
 # ===================================================================
 - name:   'Laravel Framework'
   begin:  2013-11-18
@@ -193,7 +190,10 @@
         title: Intro to Laravel
       - date:  2013-11-20
         meet:  true
-        title: Laravel Concepts             
+        title: Laravel Concepts     
+  # assignments:
+  #   - slug: 6-authentication
+  #     due:  2013-11-22
 # ===================================================================
 - name:   'Extra Topics'
   begin:  2013-11-25
@@ -208,7 +208,7 @@
         title: 'Unit Testing'
   #assignments:
     # - slug: 7-framework-version
-    #   due:  2013-11-22      
+    #   due:  2013-11-30      
 # ===================================================================
 - name:   'Extra Topics / Wrap Up'
   begin:  2013-12-02

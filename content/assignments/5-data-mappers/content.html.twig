@@ -1,0 +1,87 @@
+<p>
+    You will create a database for your application, and you will connect your models up to that database
+    via a database mapper class.
+</p>
+
+<p>
+    To begin, <a href='https://ispace-2013.cci.fsu.edu/howtos.html#MySQL' title='iSpace DB Instructions'>create a database on iSpace</a> or
+    another databae hosting provider.  Decide which of your entities (models) for which you need to store data in the database.
+</p>
+
+<p>
+    Populate each of these tables with seed data using MySQL Workbench or another MySQL tool that you are familiar with.
+</p>
+
+<p>
+    In your PHP code, create a database connector class that maps objects to and from your database.  You can create a single database
+    connector class that maps all of your entities in your database, or you can create individual classes that each map a different entity.
+    I recommend the latter; example below:
+</p>
+
+<table class='table' style='width: 75%; margin: 20px auto;'>
+    <caption>Example - Entity Classes and Mappers</caption>
+    <thead>
+        <tr>
+            <th>Entity Class</th>
+            <th>Mapper Class</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Course.php</td>
+            <td>CourseMapper.php</td>
+        </tr>
+        <tr>
+            <td>Student.php</td>
+            <td>StudentMapper.php</td>
+        </tr>        
+        <tr>
+            <td>Building.php</td>
+            <td>BuildingMapper.php</td>
+        </tr>        
+    </tbody>
+</table>
+
+<p>
+    Each of your entity mapper classes should <em>at least</em> be able to retrieve entities from the database. 
+    You may wish to add functionality to some or all classes to insert, update, and delete entities as well.
+</p>
+
+<pre><code>&lt;?php
+include_once('Student.php');
+
+//Student Mapper Class
+class StudentMapper
+{
+    public function __construct($dbhost, $dbname, $dbun, $dbpw)
+    {
+        //code to connect to database
+    }
+
+    public function getStudents()
+    {
+        $result = $this->dbconn->query("SELECT * FROM student;");
+        return $result->fetchAll(PDO::FETCH_CLASS, Student);
+    }
+
+    public function createStudent(Student $student)
+    {
+        $result = $this->db->query("INSERT into student (...) VALUES (...)");
+        return $result;
+    }
+}
+?&gt;
+</code></pre>
+
+<p>
+    In your application, use at least one of your entity mapper classes to retrieve data from the database 
+    that you had previously hard-coded in PHP. Display it on one of your pages in HTML (hint: you can use whatever
+    list you used in your <em>foreach</em> loop for assignment two would be a good substitution)
+</p>
+
+<h4>Extra Credit</h4>
+
+<p>
+    Configure a form (existing from a prior assignment or a new one) in your application to actually insert
+    data into the database when form validation succeeds.  You must use your mapper class to do so.
+</p>
