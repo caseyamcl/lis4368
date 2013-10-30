@@ -10,6 +10,8 @@ ruberick:
     - "Does the Mapper class contain at least one method for retrieving entities?"
     - "Does the Mapper class convert database results into their object entities in the code?"
     - "Is the Mapper class used on at least one HTML page to produce output?"
-    - > "All entity mapper classes must use your entity classes.  
-        When retrieving data, they must return entity objects (an array or single object), 
-        and when accepting data to insert or update, they must use entity objects as parameters"
+    - >
+        All entity mapper classes must use your entity classes.  When 
+        retrieving data, they must return entity objects (an array or single object),
+        and when accepting data to insert or update, they must use entity objects as 
+        parameters

@@ -151,7 +151,7 @@
         title: Object Mapper DB Pattern
       - date:  2013-10-30
         meet:  true
-        title: All About Sesssions       
+        title: Object Mappers Continued
 # ===================================================================
 - name:   'Design Patterns and MVC'
   begin:  2013-11-04
@@ -160,10 +160,10 @@
   lectures:
       - date:  2013-11-04
         meet:  true
-        title: Building a Login Form
+        title: All About Sesssions  
       - date:  2013-11-06
         meet:  true
-        title: Design Patterns - Front Controller
+        title: Building a Login Form
   assignments:
     - slug: 5-data-mappers
       due:  2013-11-08
@@ -178,7 +178,7 @@
         title: "Veteran's Day - FSU is Closed"
       - date:  2013-11-13
         meet:  true
-        title: Model-View-Controller
+        title: Design Patterns - Front Controller
 # ===================================================================
 - name:   'Laravel Framework'
   begin:  2013-11-18
@@ -187,10 +187,10 @@
   lectures:
       - date:  2013-11-18
         meet:  true
-        title: Intro to Laravel
+        title: Model-View-Controller
       - date:  2013-11-20
         meet:  true
-        title: Laravel Concepts     
+        title: Intro to Laravel     
   # assignments:
   #   - slug: 6-authentication
   #     due:  2013-11-22
@@ -202,10 +202,10 @@
   lectures:
       - date:  2013-11-25
         meet:  true
-        title: 'Web Services, JSON, and XML'
+        title: Laravel Concepts
       - date:  2013-11-27
         meet:  true
-        title: 'Unit Testing'
+        title: 'Web Services, JSON, and XML'
   #assignments:
     # - slug: 7-framework-version
     #   due:  2013-11-30      
