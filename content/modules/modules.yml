@@ -191,9 +191,9 @@
       - date:  2013-11-20
         meet:  true
         title: Intro to Laravel     
-  # assignments:
-  #   - slug: 6-authentication
-  #     due:  2013-11-22
+  assignments:
+    - slug: 6-authentication
+      due:  2013-11-22
 # ===================================================================
 - name:   'Extra Topics'
   begin:  2013-11-25

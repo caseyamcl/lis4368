@@ -1,0 +1,16 @@
+name:    Authentication and Sessions
+summary: >
+    Create a login page as part of your application, and use sessions to provide
+    login security for at-least one page on your site.
+ruberick:
+    - "Is the output valid HTML on the login page and the secure page?"
+    - "Does the code execute error-free?"
+    - "Is the code free of all debugging statements?"
+    - "Does the database contain a table with usernames and passwords?"
+    - "Is there a login page with a login form?"
+    - "Does the login form work for valid credentials?"
+    - "Does the login form fail for invalid credentials?"
+    - "Is the secure page accessible when logged-in?"
+    - "Is the secure page inaccessible when not logged-in?"
+    - "Does the code use a database mapper object to retrieve users from the database?"
+    - "Has the student submitted a test username and password along with the assignment submission?"

@@ -1,0 +1,131 @@
+<p>
+    You will create a login page and secure page as part of your web application.
+</p>
+
+<p>
+    To begin, create a new 'Users' table in your database, or add a username and password column
+    to an existing column in your database.  Prepopulate this table with some user data.
+</p>
+
+<p class='alert alert-warning'>
+    <strong>Note:</strong> This is an extremely insecure way of designing a login system.  While it
+    is acceptable for this assignment, never store passwords in plaintext in your database for
+    a real application.  Refer to <a href='http://www.phptherightway.com/#password_hashing'>this tutorial</a>
+    for a better way to store secure data such as passwords.
+</p>
+
+<p>
+    If you created a new table, create a new <em>User</em> object in your models.  If you added columns to
+    an existing table, add those properties (along with <em>get</em> and <em>set</em> interface methods) to
+    your existing model.
+</p>
+
+<pre><code>
+class User
+{
+    protected $username;
+
+    protected $password;
+
+    public function getUsername()
+    {
+        //...
+    }
+
+    public function setUserName($username)
+    {
+        //...
+    }
+
+    //etc....
+}
+</code></pre>
+
+<p>
+    If you created a new table, create a new Mapper class for your User model, and create a new method
+    inside that class that accepts two parameters: <var>$username</var> and <var>$password</var> to check.
+    If you added columns to an existing table, simply add the method to the existing mapper class for that
+    model:
+</p>
+
+<pre><code>
+class UserMapper
+{
+    // ....
+    // similar constructor to your other mappers
+    // ....
+
+    public function checkCredentials($username, $password)
+    {
+        //Do a database query and compare the username/password passed in with the ones in the db
+        //If match, return true, else return false
+    }
+}
+</code></pre>
+
+<p>
+    Create a new page on your site, or use an existing mockup for creating a login form.  When the user
+    submits the form, load your ModelMapper and run the <em>checkCrednetials</em> method, sending in
+    the data from the form (in the <var>$_POST</var> array).    
+</p>
+
+<p>
+    If the <em>checkCredentials</em> method returns true, then create session data to indicate the user
+    is logged-in.  If not, then reprint the form with an error message.
+</p>
+
+<code><pre>
+// don't forget to include this line
+session_start();
+
+// form submission code
+if (count($_POST) > 0) {
+    
+    // Load mapper
+
+    // Run checkCredentials()
+
+    // If returned value from checkCredentials() is TRUE, then add data
+    // to $_SESSION array to indicate the user is logged in
+    // Perhaps also redirect with a header() call: header("Location: some-other-page.php");
+
+    // Else.  Just set a message to print on the screen
+}
+
+// html for printing the form below...
+// ...
+</pre></code>
+
+<p>
+    Finally, on either a new or existing page of your site, add some code to the top to check
+    if logged-in, and if not, then redirect the user to your login page.
+</p>
+
+<pre><code>
+    session_start();
+
+    if ( ! isset($_SESSION['is-logged-in'])) {
+        header("Location: the-login-page.php");
+    }
+
+    // HTML code to display the page below...
+</code></pre>
+
+<h4>Extra Credit</h4>
+
+<p>
+    There are two opportunities for extra credit for this assignment:
+</p>
+
+<ol>
+
+    <li>
+        Store passwords in the database using a secure hash algorithm.  This will require
+        some research and additional code to generate hashed passwords to store in the database.
+        The login form should work with the hashed passwords.
+    </li>
+
+    <li>
+        Create a logout page that logs the user out and redirects the user back to the login page.
+    </li>
+</ol>
