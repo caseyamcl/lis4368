@@ -206,9 +206,9 @@
       - date:  2013-11-27
         meet:  true
         title: 'Web Services, JSON, and XML'
-  #assignments:
-    # - slug: 7-framework-version
-    #   due:  2013-11-30      
+  assignments:
+    - slug: 7-mvc
+      due:  2013-12-06
 # ===================================================================
 - name:   'Extra Topics / Wrap Up'
   begin:  2013-12-02

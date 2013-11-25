@@ -1,0 +1,87 @@
+<p>
+    You will rewrite a significant portion of your application to use an MVC framework.
+</p>
+
+<p>
+    Most students will choose to use CodeIgniter to complete this assignment, but you are free
+    to use whichever MVC framework appeals to you, or write your own logic for MVC routing.
+</p>
+
+<blockquote>
+    These instructions are written for those students using CodeIgniter.  Please adapt them
+    to another framework if you wish to use one.
+</blockquote>
+
+<ol>
+    <li>
+        Download and install CodeIgniter from the <a href='http://codeigniter.com'>CodeIgniter
+        website</a>.  This means that you will download, unzip, and then copy the CodeIgniter source
+        files into a folder inside your Netbeans project.
+    </li>
+
+    <li>
+        Test CodeIgniter by browsing to wherever you installed CodeIgniter</a>
+        (e.g. <em>http://localhost/path/to/codeigniter</em>). You should see a 
+        <em>Welcome</em> screen.
+    </li>
+
+    <li>
+        Delete the <em>Welcome</em> controller, and create controllers for your own views:
+        <pre><code>
+class MyControllerName extends CI_Controller
+{
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    public function your()
+    {
+
+    }
+
+    public function pages()
+    {
+
+    }
+
+    public function here()
+    {
+
+    } 
+}
+        </pre></code>
+    </li>
+    <li>
+        Make one of your controller methods your front page, by defining a default route in
+        the <em>application/config/routes.php</em> file.
+    </li>
+    <li>
+        Create views for each of your controller methods, and load those views in your 
+        controller.
+    </li>
+    <li>
+        Just as Assignment 5, at least one of your pages should retrieve data from the 
+        database and pass it to a view.  In order to so, you must use a Model.  Create a model,
+        and place it in your Models folder:
+        <pre><code>
+class Something_model extends CI_Model
+{
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+
+    public function getWidgets()
+    {
+        //Connect to the database and retrieve widgets, then return them
+    }
+}
+        </pre></code>
+    </li>
+    <li>
+        In the controller for your page(s) which connect to the database, load the model,
+        retrieve the data, and pass that data to the view for rendering.
+    </li>
+</ol>

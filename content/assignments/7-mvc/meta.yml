@@ -1,0 +1,14 @@
+name:    Model View Controller
+summary: >
+    Rewrite at least three pages in your application using the Model-View-Controller
+    pattern, and make at least one of those pages connect to the database to retrieve data.
+ruberick:
+    - "Is the output valid HTML on the login page and the secure page?"
+    - "Does the code execute error-free?"
+    - "Is the code free of all debugging statements?"
+    - "Is the code written using MVC (CodeIgniter, another framework, or hand-written)?"
+    - "Are there at least three pages in the MVC app?"
+    - "Does one at least one page retrieve data from the database?"
+    - "Are the controllers free of `echo` statements (these should be in the Views)?"
+    - "Are the controllers free of database manipulation (this should be in the Models)?"
+    - "Does at least one Model exist that manages interaction with the database?"
